@@ -1,0 +1,172 @@
+.go-back-btn {
+    position: fixed;
+    left: 50%;
+    bottom: 32px;
+    transform: translateX(-50%);
+    padding: 0.7rem 2.2rem;
+    background: linear-gradient(90deg, #ACB6E5 0%, #74ebd5 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);        
+    z-index: 100;
+    transition: background 0.2s;
+    display: none;
+}
+.go-back-btn:hover {
+    background: linear-gradient(90deg, #74ebd5 0%, #ACB6E5 100%);
+}
+#email_label, #password_label, #email, #password, #login, #confirm_password, #confirm_password_label, #register {
+    font-weight: bold;
+    display: none;
+}
+
+#login_button, #register_button {
+    display: inline-block;
+    margin: 0.5rem 0.5rem 0 0;
+    padding: 0.7rem 2.2rem;
+    background: linear-gradient(90deg, #74ebd5 0%, #ACB6E5 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    font-weight: 600;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    transition: background 0.2s;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+#login_button:hover, #register_button:hover {
+    background: linear-gradient(90deg, #ACB6E5 0%, #74ebd5 100%);
+}
+
+div {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem 1rem;
+    background: transparent;
+    border-radius: 10px;
+    box-shadow: none;
+    max-width: 350px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+
+label {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.2rem;
+}
+
+input[type="text"], input[type="password"] {
+    padding: 0.7rem;
+    border: 1px solid #b3c2d4;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+    background: #f4f8fb;
+    margin-bottom: 0.7rem;
+}
+input[type="text"]:focus, input[type="password"]:focus {
+    border-color: #74ebd5;
+    box-shadow: 0 0 0 2px #74ebd544;
+}
+
+#login, #register {
+    padding: 0.7rem 2.2rem;
+    background: linear-gradient(90deg, #74ebd5 0%, #ACB6E5 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    margin-top: 0.5rem;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    transition: background 0.2s;
+}
+#login:hover, #register:hover {
+    background: linear-gradient(90deg, #ACB6E5 0%, #74ebd5 100%);
+}
+body {
+    background: linear-gradient(135deg, #74ebd5 0%, #ACB6E5 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+}
+
+.login-container {
+    background: #fff;
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.12);
+    width: 100%;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.login-container h2 {
+    margin: 0 0 1rem 0;
+    font-size: 1.7rem;
+    color: #333;
+    text-align: center;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+.login-container input[type="text"]:focus,
+.login-container input[type="password"]:focus {
+    border-color: #74ebd5;
+}
+
+.login-container button {
+    padding: 0.7rem;
+    background: linear-gradient(90deg, #74ebd5 0%, #ACB6E5 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    display: block;
+    transition: background 0.2s;
+}
+
+.login-container button:hover {
+    background: linear-gradient(90deg, #ACB6E5 0%, #74ebd5 100%);
+}
+
+@media (max-width: 500px) {
+    .login-container {
+        padding: 1.2rem 0.7rem;
+        max-width: 95vw;
+    }
+}
+#email_label, #password_label, #email, #password, #login, #confirm_password, #confirm_password_label, #register {
+    font-weight: bold;
+    display: none;
+}
